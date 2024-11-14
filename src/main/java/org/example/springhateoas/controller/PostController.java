@@ -34,6 +34,7 @@ public class PostController {
     }
 
 
+    //bu simple dget all + hateoas
     @GetMapping
     public CollectionModel<EntityModel<Post>> getPosts() {
         List<Post> posts = postRepository.findAll();
